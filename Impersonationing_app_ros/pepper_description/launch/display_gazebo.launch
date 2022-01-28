@@ -1,0 +1,22 @@
+<!-- roslaunch file to start view an URDF model in rviz.
+      Adapted from urdf_tutorial/display.launch -->
+<launch>
+  <arg name="model" />
+  <arg name="gui" default="true" />
+  <arg name="version" default="1.0"/>
+  <!-- Gazebo world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <include file="$(find pepper_description)/launch/pepper_publisher.launch">
+    <arg name="version" value="$(arg version)"/>
+  </include>
+  <param name="use_gui" value="$(arg gui)"/>
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node>
+  <node name="rviz" pkg="rviz" type="rviz" args="-f torso -d $(find pepper_description)/config/urdf.rviz" />
+</launch>
