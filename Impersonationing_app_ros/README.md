@@ -1,6 +1,7 @@
 # Impersonationing code for ROS
 
 ## Présentation 
+Nous avons développé une esquisse de fichier de lancement (launch file) intitulé display.launch avec le *framework* ROS permettant de visualiser le robot dans le logiciel de simulation Rviz. Cependant, ce fichier ne fonctionne pas avec Gazebo. 
 
 ## Pré-requis 
 Pour utiliser les packages ROS de PEPPER, il est nécessaire d'avoir installé au préalable les versions des logiciels suivants :
@@ -15,12 +16,12 @@ De plus, une fois cela fait, il faut procéder à l'installation des *SDK* et du
 Ensuite, avant de procéder à l'installation de notre robot virtuel, le tutoriel à l'adresse suivante doit être suivi : http://wiki.ros.org/pepper/Tutorials
 
 ## Installation 
-Pour obtenir une version de PEPPER virtuel utilisable dans Rviz, il faut ensuite (après avoir crée son workspace, comme mentionné dans le tutoriel, il est possible d'ajouter les fichiers contenus dans Impersonationing_app_ROS puis, dans son terminal :
+Pour obtenir une version de PEPPER virtuel utilisable dans Rviz, il faut ensuite (après avoir crée son workspace, comme mentionné dans le tutoriel, il est possible d'ajouter les dossiers contenus dans Impersonationing\_app_ros dans le dossier source du workspace puis, dans son terminal :
 - se placer dans son workspace avec la commande **cd ~/catkin_ws**
 - compiler en tapant : **catkin_make**
 - sourcer : . ~/catkin_ws/devel/setup.bash
 
-Il est ensuite possible de lancer la commande depuis le terminal en tapant :
+Il est ensuite possible de lancer avec la commande suivante depuis le terminal :
 **roslaunch pepper_description display.launch**
 
 Une fenêtre Rviz doit alors s'ouvrir avec le robot PEPPER au centre d'un monde vide.
