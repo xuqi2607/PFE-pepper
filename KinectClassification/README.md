@@ -1,4 +1,5 @@
 # La classification de posture
+On utilise un modèle Inception-V3 pour faire la detection des postures. Il y a 5 postures. Vous téléchargez ce dossier, vous pourriez visualiser la classification de postures en temps réel. Le résultat de detection de posture s’affiche sur en haut à gauche de la fenêtre.
 
 ## Contenu
 - KinectClassification.exe : fichier exécutable pour faire la detection en temps réel
@@ -8,10 +9,8 @@
 ## Installation des pré-requis
 Il faut installer Kinect v1.8 SDK: https://www.microsoft.com/en-us/download/details.aspx?id=40278
 
-## Les étapes
+## Les étapes d'utilisation
 - Brancher le Kinect xbox 360 sur le PC avec USB 3.0.
 - Placer la caméra à une distance d’entre 1m65 et 1m80
-- Mettre devant un fond blanc
-- Cliquer sur KinectDetection.exe
-
-Le résultat de detection de posture s’afficher sur en haut à gauche de la fenêtre
+- Mettre devant un fond blanc et assurer une bonne luminosité
+- Cliquer sur KinectDetection.exe pour lancer la visualisation
