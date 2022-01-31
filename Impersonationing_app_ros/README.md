@@ -16,19 +16,19 @@ De plus, une fois cela fait, il faut procéder à l'installation des *SDK* et du
 Ensuite, avant de procéder à l'installation de notre robot virtuel, le tutoriel à l'adresse suivante doit être suivi : http://wiki.ros.org/pepper/Tutorials
 
 ## Installation 
-Pour obtenir une version de PEPPER virtuel utilisable dans Rviz, il faut ensuite (après avoir crée son workspace, comme mentionné dans le tutoriel, il est possible d'ajouter les dossiers contenus dans Impersonationing\_app_ros dans le dossier source du workspace puis, dans son terminal :
+Pour obtenir une version de PEPPER virtuel utilisable dans Rviz, il faut ensuite (après avoir créé son workspace, comme mentionné dans le tutoriel, il est possible d'ajouter les dossiers contenus dans Impersonationing\_app_ros dans le dossier source du workspace puis, dans son terminal :
 - se placer dans son workspace avec la commande **cd ~/catkin_ws**
 - compiler en tapant : **catkin_make**
 - sourcer : . ~/catkin_ws/devel/setup.bash
 
-Il est ensuite possible de lancer avec la commande suivante depuis le terminal :
+Il faut ensuite lancer avec la commande suivante depuis le terminal :
 **roslaunch pepper_description display.launch**
 
 Une fenêtre Rviz doit alors s'ouvrir avec le robot PEPPER au centre d'un monde vide.
 
 
 ## Ce qu'il reste à faire
-Malheureusement, il n'est pas possible de contrôler le robot depuis Rviz en publiant sur le topic *joint_state_publisher* dû au fonctionnement de Rviz. Il a seulement été possible de calculer les valeurs visées des paramètres des liaisons articulaires grâce à l'interface *joint-state-publisher-gui* grâce à laquelle, nous avons pu établir les valeurs pour les joints d'interêts :
+Malheureusement, il n'est pas possible de contrôler le robot depuis Rviz en publiant sur le topic *joint_state_publisher* dû au fonctionnement de Rviz. Il a seulement été possible de calculer les valeurs visées des paramètres des liaisons articulaires grâce à l'interface *joint-state-publisher-gui* grâce à laquelle, nous avons pu établir les valeurs pour les joints d'intérêt :
 
 [LShoulderPitch, LShoulderRoll, LElbowYaw, LElbowRoll, RShoulderPitch, RShoulderRoll, RElbowYaw, RElbowRoll]
 
@@ -39,7 +39,7 @@ dont les valeurs respectives sont pour les positions cibles :
 - 4 : [-1.41, 1.56,  0.00, -1.56, -1.41, -1.56, 0.00, 1.56]
 - 5 : [0.00,  0.01, -2.09, -0.01,  0.00, -0.01, 2.09, 0.01]
 
-Toutefois, il est possible, si l'on a accès à un véritable robot PEPPER physique, de générer un fichier Xacro automatiquement avec tous les services et topic nécessaires au bon fonctionnement de PEPPER ré-utilisable dans le logiciel de virtualisation **Gazebo**.
+Toutefois, il est possible, si l'on a accès à un véritable robot PEPPER physique, de générer un fichier Xacro automatiquement avec tous les services et topics nécessaires au bon fonctionnement de PEPPER et ré-utilisables dans le logiciel de virtualisation **Gazebo**.
 
 
 
