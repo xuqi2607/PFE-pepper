@@ -2,6 +2,7 @@
 On utilise un modèle Inception-V3 pour faire la detection des postures. Il y a 5 postures. Vous téléchargez ce dossier, vous pourriez visualiser la classification de postures en temps réel. Le résultat de detection de posture s’affiche sur en haut à gauche de la fenêtre.
 
 ## Contenu
+- main.cpp : codes C++
 - KinectClassification.exe : fichier exécutable pour faire la detection en temps réel
 - model.onnx : modèle entrainé en Python puis transformé en format onnx
 - opencv_world455.dll : bibliothèque de OpenCV
