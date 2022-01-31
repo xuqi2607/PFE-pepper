@@ -1,12 +1,12 @@
 # La classification de posture
-Pour la reconnaissance de 5 postures pré-définies, nous avons construit un modèle Inception-V3. Dans ce dossier, sont contenus tous les programmes essentiels au fonctionnement de cette IA, un Notebook contenant les entraînements successifs et un document récapitulatif des différentes architecture d'IA testées, avec une analyse comparative de leurs performances ainsi qu'un état de l'art.
+Pour la reconnaissance de 5 postures pré-définies, nous avons construit un modèle Inception-V3. Dans ce dossier, sont contenus tous les programmes essentiels au fonctionnement de cette IA, un Notebook contenant les entraînements successifs et un document récapitulatif des différentes architectures d'IA testées, avec une analyse comparative de leurs performances ainsi qu'un état de l'art.
 
-Une fois le dossier téléchargé, il suffit d'exécuter le fichier KinectClassification.exe, une fenêtre composée de la vue de la caméra et du résultat de détection de l'IA en haut à gauche s'ouvrira alors. La personne placée dans le champs de vision de la caméra pourra alors prendre les poses. 
+Une fois le dossier téléchargé, il suffit d'exécuter le fichier KinectClassification.exe, une fenêtre composée de la vue de la caméra et du résultat de détection de l'IA en haut à gauche s'ouvrira alors. La personne placée dans le champ de vision de la caméra pourra alors prendre les poses. 
 
 ## Contenu
-- KinectClassification.exe : fichier exécutable réalisant la detection en temps réel
+- KinectClassification.exe : fichier exécutable réalisant la détection en temps réel
 - main.cpp : code C++
-- model.onnx : modèle entrainé en Python puis converti au format onnx compatible avec le C++
+- model.onnx : modèle entrainé en Python puis converti au format onnx (compatible avec le C++)
 - opencv_world455.dll : bibliothèque de OpenCV
 - training_inception_v3.ipynb : python notebook de l'entraînement de reconnaissance de posture
 
