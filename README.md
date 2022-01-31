@@ -4,7 +4,7 @@
 Dans le milieu hospitalier, les patients-enfants atteints d’autismes présentes des difficultés à échanger avec d'autres humains. Or, à travers divers projets utilisant le robot Nao et mêlant la médecine, l’ingénierie et la psychologie, il a été possible de créer un vecteur de communication entre ces patients et le personnel hospitalier. Cependant, ce robot a du mal à maintenir son équilibre ce qui peut entraîner des cas de chutes et une incapacité à se relever. 
 L’alternative envisagée est donc d’utiliser le robot PEPPER possèdant une meilleure stabilité. 
 Notre projet consiste à réaliser un jeu entre le patient atteint d'autisme et le robot où ce dernier devrait reproduire l'une des 5 poses prises par le patient.
-Nous avons donc réalisé ici, un démonstrateur comprenant deux parties indépendantes mais qui, s'il était possible de les relier constituraient un démonstrateur complet : une partie de reconnaissance de poses et une partie de robotique pour que le robot humanoïde PEPPER puisse prendre ces poses.  
+Nous avons donc réalisé ici, un démonstrateur comprenant deux parties indépendantes mais qui, s'il était possible de les relier, constitueraient un démonstrateur complet : une partie de reconnaissance de poses et une partie de robotique pour que le robot humanoïde PEPPER puisse prendre ces poses.  
     
 PEPPER doit être capable de reproduire 5 poses déterminées que peut prendre une persone en temps-réel :
 - une position neutre (StandInit) où l'individu est droit et laisse ses bras pendre le long du corps ;
